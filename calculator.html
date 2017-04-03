@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Calculator</title><!-- Bootstrap -->
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   
+</head>
+<body>
+
+  <p>This is a simple calculator, if I had more time I would have liked to create buttons with actually work together to make a working calculator, as of now they are just simple hard coded values.</p>
+  <p>This is the addition demo of 7+3</p>
+  <p id="addDemo"></p>
+  <p>This is the subtractions demo of 7-3.</p>
+  <p id="subtractDemo"></p>
+  <p>This is the multiplication demo of 7*3.</p>
+  <p id="multiplyDemo"></p>
+  <p>this is the division demo of 7/3. </p>
+  <p id="divideDemo"></p>
+  
+  <script>
+    function add(x,y){
+      return x + y;
+    }
+    function subtract(x,y){
+      return x - y;
+    }
+    function multiply(x,y){
+      return x * y;
+    }
+    function divide(x,y){
+      return x / y;
+    }
+    document.getElementById("addDemo").innerHTML = add(7,3);
+    document.getElementById("subtractDemo").innerHTML = subtract(7,3);
+    document.getElementById("multiplyDemo").innerHTML = multiply(7,3);
+    document.getElementById("divideDemo").innerHTML = divide(7,3);
+  </script>
+</body>
